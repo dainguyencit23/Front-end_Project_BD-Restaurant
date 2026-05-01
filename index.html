@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BD-Restaurent</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Open+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <header>
+            <div class="top-header">
+                <div class="overlay">
+                    <div class="logo">
+                        <a href=""><img src="./image/logo.png" alt="Restaurant Logo"></a>
+                    </div>
+
+                    <div class="header-content">
+                        <h1 class="header-heading">Comfortable Dining Room</h1>
+                        <p class="header-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                        <a href="#" class="header-more-btn">Learn More</a>
+                    </div>
+                    <i class="fa-solid fa-angle-left"></i>
+                    <i class="fa-solid fa-angle-right"></i>
+                    <div class="slider-dot">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="overlay-main-header">
+
+                <div class="main-header">
+                    <nav class="navigation-menu">
+                        <ul class="primary-menu">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#about-id">About</a></li>
+                            <li><a href="#food-id">Menu</a></li>
+                            <li><a href="#reservation-id">Online Order</a></li>
+                            <li class="has-child">
+                                <a href="#">Pages</a>
+                                <ul class="sub-menu">
+                                    <li><a href="#chef-id">Chefs</a></li>
+                                    <li><a href="#review-id">Review</a></li>
+                                    <li><a href="#contact-id">Contact Us</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#contact-id">Contact</a></li>
+                        </ul>
+                    </nav>
+
+                    <div id="menuToggle" class="menu-toggle">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+
+                <div id="menuClose" class="menu-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+
+            </div>
+        </header>
+
+        <main>
+            <!-- About Us -->
+            <section class="about-section sub-container" id="about-id">
+                <div class="row">
+                    <div class="col-md-5 img-about">
+                        <div class="about-img">
+                            <img src="./image/about-us.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-7 about-container">
+                        <div class="about-content">
+                            <h1 class="about-heading">About Us</h1>
+                            <div class="about-icon">
+                                <ul>
+                                    <li><a href="#" class="twitter"></a></li>
+                                    <li><a href="#" class="facebook"></a></li>
+                                    <li><a href="#" class="pinterest"></a></li>
+                                    <li><a href="#" class="google"></a></li>
+                                </ul>
+                            </div>
+                            <p class="about-content-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Aliquam
+                                convallis quam sed tincidunt
+                                accumsan. Aliquam at tincidunt tortor, ac porta turpis. Curabitur lacinia venenatis
+                                semper.
+                            </p>
+                            <p class="about-content-desc">Aliquam ut nibh ut lacus posuere facilisis. Vestibulum
+                                ullamcorper
+                                arcu et bibendum ultrices.
+                                Suspendisse rutrum turpis vitae.</p>
+
+                            <div class="about-feature-group row">
+                                <div class="col-md-6">
+                                    <div class="about-item">
+                                        <h3 class="about-item-heading">Our Features</h3>
+                                        <p class="about-item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            elit.
+                                            Nam dignissim mi arcu, ut
+                                            tristique dui eleifend a. Vivamus ac nulla metus. Vestibulum sit amet quam
+                                            tincidunt.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="about-item">
+                                        <h3 class="about-item-heading">Our Facilities</h3>
+                                        <p class="about-item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            elit.
+                                            Nam dignissim mi arcu, ut
+                                            tristique dui eleifend a. Vivamus ac nulla metus. Vestibulum sit amet quam
+                                            tincidunt.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Reservations -->
+            <section class="reservation" id="reservation-id">
+                <h2 class="reservation-title">Reservations</h2>
+                <div class="reservation-form">
+                    <div class="input-group">
+                        <input type="date" id="date">
+                        <span class="icon">
+                            <i class="fa-regular fa-calendar"></i>
+                        </span>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="time" id="time">
+                        <span class="icon">
+                            <i class="fa-regular fa-clock"></i>
+                        </span>
+                    </div>
+
+                    <div class="input-group">
+                        <select id="size">
+                            <option>Party Size</option>
+                            <option>1</option>
+                            <option>2 </option>
+                            <option>3 </option>
+                            <option>4 </option>
+                            <option>5+</option>
+                        </select>
+                    </div>
+
+                    <button id="bookBtn" class="btn-book">
+                        Book Now
+                    </button>
+
+                </div>
+
+            </section>
+            <!-- Food -->
+            <section class="food-menu-section sub-container" id="food-id">
+                <h1 class="food-menu-heading">Delicious Food Menu</h1>
+                <div class="main-menu row">
+                    <div class="col-md-3">
+                        <article class="menu-item">
+                            <img src="./image/menu-1.jpg" alt="">
+                            <div class="menu-info">
+                                <h3><a href="#" class="menu-name">Lorem ipsum</a></h3>
+                                <p class="menu-price">$20.00 / Person</p>
+                                <p class="menu-desc">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                <a href="#" class="menu-order-btn">Order Now</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-3">
+                        <article class="menu-item">
+                            <img src="./image/menu-2.jpg" alt="">
+                            <div class="menu-info">
+                                <h3><a href="#" class="menu-name">Curabitur Commodo</a></h3>
+                                <p class="menu-price">$20.00 / Person</p>
+                                <p class="menu-desc">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                <a href="#" class="menu-order-btn">Order Now</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-3">
+                        <article class="menu-item">
+                            <img src="./image/menu-3.jpg" alt="">
+                            <div class="menu-info">
+                                <h3><a href="#" class="menu-name">Proin Tortor</a></h3>
+                                <p class="menu-price">$20.00 / Person</p>
+                                <p class="menu-desc">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                <a href="#" class="menu-order-btn">Order Now</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-3">
+                        <article class="menu-item">
+                            <img src="./image/menu-4.jpg" alt="">
+                            <div class="menu-info">
+                                <h3><a href="#" class="menu-name">Aliquam Erat</a></h3>
+                                <p class="menu-price">$20.00 / Person</p>
+                                <p class="menu-desc">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                <a href="#" class="menu-order-btn">Order Now</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-3">
+                        <article class="menu-item">
+                            <img src="./image/menu-5.jpg" alt="">
+                            <div class="menu-info">
+                                <h3><a href="#" class="menu-name">Curabitur Arcu Massa</a></h3>
+                                <p class="menu-price">$20.00 / Person</p>
+                                <p class="menu-desc">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                <a href="#" class="menu-order-btn">Order Now</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-3">
+                        <article class="menu-item">
+                            <img src="./image/menu-6.jpg" alt="">
+                            <div class="menu-info">
+                                <h3><a href="#" class="menu-name">Vestibulum Fringilla</a></h3>
+                                <p class="menu-price">$20.00 / Person</p>
+                                <p class="menu-desc">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                <a href="#" class="menu-order-btn">Order Now</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-3">
+                        <article class="menu-item">
+                            <img src="./image/menu-7.jpg" alt="">
+                            <div class="menu-info">
+                                <h3><a href="#" class="menu-name">Ullamcorper Facilisis</a></h3>
+                                <p class="menu-price">$20.00 / Person</p>
+                                <p class="menu-desc">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                <a href="#" class="menu-order-btn">Order Now</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-3">
+                        <article class="menu-item">
+                            <img src="./image/menu-8.jpg" alt="">
+                            <div class="menu-info">
+                                <h3><a href="#" class="menu-name">Integer Ullamcorper</a></h3>
+                                <p class="menu-price">$20.00 / Person</p>
+                                <p class="menu-desc">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                <a href="#" class="menu-order-btn">Order Now</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <!-- Chef -->
+            <section class="chef-section" id="chef-id">
+                <div class="sub-container">
+                    <h1 class="chef-heading">Meet Our Chefs</h1>
+                    <div class="chef-profile-list row">
+                        <div class="col-md-3">
+                            <div class="chef-profile">
+                                <img src="./image/team-1.jpg" alt="">
+                                <div class="chef-info">
+                                    <h3 class="chef-name">Don Dennis</h3>
+                                    <p>Assistant Chef</p>
+                                    <div class="chef-contact">
+                                        <ul>
+                                            <li><a href="" class="twitter"></a></li>
+                                            <li><a href="" class="facebook"></a></li>
+                                            <li><a href="" class="google"></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="chef-profile">
+                                <img src="./image/team-2.jpg" alt="">
+                                <div class="chef-info">
+                                    <h3 class="chef-name">Mary Tejeda</h3>
+                                    <p>Assistant Chef</p>
+                                    <div class="chef-contact">
+                                        <ul>
+                                            <li><a href="" class="twitter"></a></li>
+                                            <li><a href="" class="facebook"></a></li>
+                                            <li><a href="" class="google"></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="chef-profile">
+                                <img src="./image/team-3.jpg" alt="">
+                                <div class="chef-info">
+                                    <h3 class="chef-name">Scott Williams</h3>
+                                    <p>Assistant Chef</p>
+                                    <div class="chef-contact">
+                                        <ul>
+                                            <li><a href="" class="twitter"></a></li>
+                                            <li><a href="" class="facebook"></a></li>
+                                            <li><a href="" class="google"></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="chef-profile">
+                                <img src="./image/team-4.jpg" alt="">
+                                <div class="chef-info">
+                                    <h3 class="chef-name">Mary Hall</h3>
+                                    <p>Assistant Chef</p>
+                                    <div class="chef-contact">
+                                        <ul>
+                                            <li><a href="" class="twitter"></a></li>
+                                            <li><a href="" class="facebook"></a></li>
+                                            <li><a href="" class="google"></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Review -->
+            <section class="review-section sub-container" id="review-id">
+
+                <h1 class="review-heading">Our Food Lovers</h1>
+
+                <div class="review-slider">
+
+                    <div class="reviews-item row review-slide active">
+
+                        <div class="review-item-img col-md-4">
+                            <img src="./image/testimonial-1.jpg" alt="">
+                        </div>
+
+                        <div class="col-md-8 review-container">
+                            <div class="review-item-content">
+                                <h3 class="review-item-name">Jamie D.Boyd</h3>
+                                <p class="review-item-job">Oral Radiologist</p>
+                                <p class="review-item-desc">
+                                    Commodo sed hendrerit id, posuere tempus odio. Phasellus vel leo aliquam, interdum
+                                    massa quis, aliquam sapien. Aliquam erat volutpat. Etiam nec feugiat libero.
+                                    Phasellus in ipsum nunc.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="reviews-item row review-slide">
+
+                        <div class="review-item-img col-md-4">
+                            <img src="./image/testimonial-2.jpg" alt="">
+                        </div>
+
+                        <div class="col-md-8">
+                            <div class="review-item-content">
+                                <h3 class="review-item-name">Albert J. Cerrato</h3>
+                                <p class="review-item-job">Craft Artist</p>
+                                <p class="review-item-desc">
+                                    Proin ut dui dictum ligula condimentum cursus. Ut orci arcu, commodo sed hendrerit
+                                    id, posuere tempus odio. Phasellus vel leo aliquam, interdum massa quis, aliquam
+                                    sapien. Aliquam erat volutpat
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="reviews-item row review-slide">
+
+                        <div class="review-item-img col-md-4">
+                            <img src="./image/testimonial-3.jpg" alt="">
+                        </div>
+
+                        <div class="col-md-8">
+                            <div class="review-item-content">
+                                <h3 class="review-item-name">Theresa R. Wood</h3>
+                                <p class="review-item-job">Prepress Technician</p>
+                                <p class="review-item-desc">
+                                    Dictum ligula condimentum cursus commodo sed hendrerit id, posuere tempus odio.
+                                    Phasellus vel leo , interdum massa quis, aliquam sapien. Aliquam erat
+                                    volutpat. Etiam nec ultricies semper risus.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- dots -->
+                    <div class="review-dots">
+                        <span class="review-dot active"></span>
+                        <span class="review-dot"></span>
+                        <span class="review-dot"></span>
+                    </div>
+
+                </div>
+
+            </section>
+            <!-- Contact -->
+            <section class="contact-section sub-container" id="contact-id">
+                <h1 class="contact-heading">Contact Us</h1>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="contact-info">
+                            <div class="open-hour">
+                                <h2 class="open-hour-heading">Opening Hours</h2>
+                                <p class="contact-desc">Monday - Friday: 7am to 12am</p>
+                                <p class="contact-desc">Saturday: 5pm to 12am</p>
+                                <p class="contact-desc">Sunday: 9am to 12am</p>
+                            </div>
+                            <div class="contact-details">
+                                <h2 class="contact-info-heading">Contact Info</h2>
+                                <p class="contact-desc">4137 State Street, CA, USA</p>
+                                <p class="contact-desc">+1-234-567-8900</p>
+                                <p class="contact-desc">info@example.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <form action="" method="post" class="contact-form">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="text" name="name" id="name" placeholder="Your Name"
+                                        class="contact-name-input">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" name="email" id="email" placeholder="Your Email"
+                                        class="contact-email-input">
+                                </div>
+                            </div>
+                            <input type="text" name="subject" id="subject" placeholder="Subject">
+                            <textarea name="message" id="message" rows="5" placeholder="Message"></textarea>
+                            <button type="submit" class="contact-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="sub-footer">
+                <p>Need Reservations? Call Us 24/7 at +1-234-567-8900</p>
+            </div>
+            <div class="main-footer">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="copyright-info">&copy; Copyright <span class="bold">Your Site Name</span>. All Rights Reserved 
+                        </p>
+                        <p class="copyright-info">Template By <span class="bold">CSW 304</span></p>
+                    </div>
+                    <div class="get-notification col-md-6">
+                        <h3 class="footer-heading">Get Lastest Food Information</h3>
+                        <form action="" method="post" class="notifi-email">
+                            <input type="email" name="email" id="notifi-email" placeholder="Enter Your Email">
+                            <button type="submit" class="notifi-btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="go-to-top">
+        <a href="#"><i class="fa-solid fa-angle-up"></i></a>
+    </div>
+    <script src="https://code.jquery.com/jquery-4.0.0.js"
+        integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
